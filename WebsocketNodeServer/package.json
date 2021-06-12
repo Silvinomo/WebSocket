@@ -4,6 +4,7 @@
   "description": "A chat app using WebSockets",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -13,14 +14,14 @@
   "author": "Technosaviour",
   "license": "ISC",
   "bugs": {
-    "url": ""
+    "url": "http://exemplo.com"
   },
-  "homepage": "",
+  "homepage": "#",
   "dependencies": {
-    "express": "^4.15.2",
-    "socket.io": "^1.7.3"
+    "express": "^4.17.1",
+    "socket.io": "^4.1.2"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0"
+    "nodemon": "^2.0.7"
   }
 }
