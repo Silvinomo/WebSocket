@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
   }
 
   messageTyping(): void {
-    this.webSocketService.emit('typing', this.userName);    
+    this.webSocketService.emit('typing', this.userName);
   }
 
   sendMessage(): void {
@@ -29,17 +29,17 @@ export class AppComponent implements OnInit {
       message: this.message,
       handle: this.userName
     });
-    this.message = "";    
+    this.message = "";
   }
 
-  updateMessage(data:any) {
+  updateMessage(data: any) {
     this.feedback = '';
-    if(!!!data) return;
+    if (!!!data) return;
     console.log(`${data.handle} : ${data.message}`);
     this.output.push(data);
   }
 
-  updateFeedback(data: any){
+  updateFeedback(data: any) {
     this.feedback = `${data} is typing a message`;
   }
 
